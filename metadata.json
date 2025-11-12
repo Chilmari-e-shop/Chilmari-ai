@@ -1,0 +1,5 @@
+{
+  "name": "Chilmari AI",
+  "description": "A multi-agent AI chat web application with a modern, clean, ChatGPT-style interface. It supports multiple AI agents, dark mode, file uploads, and chat history persistence.",
+  "requestFramePermissions": []
+}

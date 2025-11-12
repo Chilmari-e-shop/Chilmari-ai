@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chilmari AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'dark-bg': '#202123',
+              'dark-sidebar': '#2A2B32',
+              'dark-main': '#343541',
+              'dark-input': '#40414F',
+              'dark-bubble-ai': '#444654',
+              'dark-bubble-user': '#2A2B32',
+              'dark-text': '#ECECF1',
+              'light-bg': '#F9FAFB',
+              'light-sidebar': '#FFFFFF',
+              'light-main': '#F9FAFB',
+              'light-input': '#FFFFFF',
+              'light-bubble-ai': '#F3F4F6',
+              'light-bubble-user': '#3B82F6',
+              'light-text': '#1F2937',
+              'light-text-user': '#FFFFFF',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'slide-in-bottom': 'slideInBottom 0.5s ease-in-out',
+              'pulse-fast': 'pulseFast 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              slideInBottom: {
+                '0%': { transform: 'translateY(20px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 },
+              },
+              pulseFast: {
+                '0%, 100%': { opacity: 1 },
+                '50%': { opacity: 0.5 },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^9.0.1",
+    "remark-gfm": "https://aistudiocdn.com/remark-gfm@^4.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-light-bg dark:bg-dark-bg">
+    <div id="root"></div>
+  </body>
+</html>
